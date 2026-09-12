@@ -5,6 +5,7 @@ import { fetchPage } from '../lib/content';
 import { useLang } from '../lib/i18n';
 import { useRegisterPageHandlers } from '../lib/pageActions';
 import { storeGet, storeSet } from '../lib/store';
+import { useCollapsed } from '../lib/collapsed';
 import { scrollToCard } from '../lib/scrollTo';
 import { useRegisterToc } from '../lib/tocActions';
 import { BlockRenderer } from './BlockRenderer';
@@ -36,8 +37,8 @@ export function GuideBody({ pageId, before }: GuideBodyProps) {
   const [data, setData] = useState<PageData | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [reloadNonce, setReloadNonce] = useState(0);
-  const [collapsed, setCollapsed] = useState<Record<string, boolean>>({});
-  const [sourcesCollapsed, setSourcesCollapsed] = useState(true);
+  // Open/closed state is remembered per card id across pages and visits; sources cards default to closed.
+  const collapsedState = useCollapsed();
   const [flashId, setFlashId] = useState<string | null>(null);
   const [classCompact, setClassCompact] = useState<boolean>(() => storeGet('classCompact', false));
 
@@ -45,8 +46,6 @@ export function GuideBody({ pageId, before }: GuideBodyProps) {
     let cancelled = false;
     setData(null);
     setError(null);
-    setCollapsed({});
-    setSourcesCollapsed(true);
     fetchPage(lang, pageId).then(
       (d) => {
         if (!cancelled) setData(d);
@@ -70,8 +69,7 @@ export function GuideBody({ pageId, before }: GuideBodyProps) {
   useEffect(() => {
     const targetId = (location.state as { cardId?: string } | null)?.cardId;
     if (!targetId || !data) return undefined;
-    if (targetId === sourcesId) setSourcesCollapsed(false);
-    else setCollapsed((prev) => ({ ...prev, [targetId]: false }));
+    collapsedState.expand(targetId);
     setFlashId(targetId);
     const t1 = window.setTimeout(() => {
       document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -92,30 +90,19 @@ export function GuideBody({ pageId, before }: GuideBodyProps) {
 
   const handlers = useMemo(
     () => ({
-      expandAll: () => {
-        setCollapsed({});
-        setSourcesCollapsed(false);
-      },
-      collapseAll: () => {
-        const next: Record<string, boolean> = {};
-        cardBlocks.forEach((c) => {
-          next[c.id] = true;
-        });
-        setCollapsed(next);
-        setSourcesCollapsed(true);
-      },
+      expandAll: () => collapsedState.setMany([...cardBlocks.map((c) => c.id), sourcesId], false),
+      collapseAll: () => collapsedState.setMany([...cardBlocks.map((c) => c.id), sourcesId], true),
     }),
-    [cardBlocks],
+    [cardBlocks, sourcesId, collapsedState.setMany],
   );
   useRegisterPageHandlers(handlers);
 
   const handleTocNavigate = useCallback(
     (id: string) => {
-      if (id === sourcesId) setSourcesCollapsed(false);
-      else setCollapsed((prev) => ({ ...prev, [id]: false }));
+      collapsedState.expand(id);
       window.setTimeout(() => scrollToCard(id, 70), 30);
     },
-    [sourcesId],
+    [collapsedState.expand],
   );
 
   // Publishes this page's TOC up to Layout, which renders the sticky right rail (>=1280px).
@@ -180,10 +167,10 @@ export function GuideBody({ pageId, before }: GuideBodyProps) {
       blocks={bodyBlocks}
       pageId={pageId}
       classId={data.classId}
-      collapsed={collapsed}
-      onToggleCard={(id) => setCollapsed((prev) => ({ ...prev, [id]: !prev[id] }))}
-      sourcesCollapsed={sourcesCollapsed}
-      onToggleSources={() => setSourcesCollapsed((v) => !v)}
+      collapsed={collapsedState.map}
+      onToggleCard={(id) => collapsedState.toggle(id)}
+      sourcesCollapsed={collapsedState.isCollapsed(sourcesId, true)}
+      onToggleSources={() => collapsedState.toggle(sourcesId, true)}
       flashId={flashId}
       classCompact={classCompact}
       onToggleClassCompact={toggleClassCompact}

@@ -7,7 +7,7 @@ export type StoreKey =
   | 'chk' | 'profile'
   | 'chars' | 'customTasks' | 'counts' | 'hiddenTasks' | 'trk' | 'trkReset'
   | 'lastExport' | 'bkSnooze'
-  | 'theme' | 'nav' | 'toc';
+  | 'theme' | 'nav' | 'toc' | 'collapsed';
 
 export function storeGet<T>(key: StoreKey, fallback: T): T {
   try {

@@ -7,6 +7,7 @@ import { useToast } from '../components/Toast';
 import { fetchPage } from '../lib/content';
 import { CLASSES } from '../lib/data';
 import { useLang } from '../lib/i18n';
+import { useCollapsed } from '../lib/collapsed';
 import { useRegisterPageHandlers } from '../lib/pageActions';
 import { phaseStats, useChk, useProfile } from '../lib/progress';
 import { exportBackup, parseBackup, type Profile, type ProfileField } from '../lib/backup';
@@ -27,7 +28,9 @@ export function RoadmapPage() {
   const [profile, setProfileField] = useProfile();
   const tracker = useTracker();
   const [page, setPage] = useState<PageData | null>(null);
-  const [collapsed, setCollapsed] = useState<Record<string, boolean>>({});
+  // Phase open/closed state is remembered across visits under the phase id (already prefixed "roadmap-").
+  const collapsedState = useCollapsed();
+  const phaseKey = (id: string) => (id.startsWith('roadmap-') ? id : `roadmap-${id}`);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -58,15 +61,16 @@ export function RoadmapPage() {
 
   const pageHandlers = useMemo(
     () => ({
-      expandAll: () => setCollapsed({}),
-      collapseAll: () => setCollapsed(Object.fromEntries(phases.map((p) => [p.id, true]))),
+      expandAll: () => collapsedState.setMany(phases.map((p) => phaseKey(p.id)), false),
+      collapseAll: () => collapsedState.setMany(phases.map((p) => phaseKey(p.id)), true),
     }),
-    [phases],
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [phases, collapsedState.setMany],
   );
   useRegisterPageHandlers(pageHandlers);
 
   function togglePhase(id: string) {
-    setCollapsed((c) => ({ ...c, [id]: !c[id] }));
+    collapsedState.toggle(phaseKey(id));
   }
 
   function handleHeaderClick(id: string, e: MouseEvent<HTMLElement>) {
@@ -203,7 +207,7 @@ export function RoadmapPage() {
           const s = statsById.get(ph.id) ?? { done: 0, total: 0, pct: 0 };
           const isDone = s.total > 0 && s.done === s.total;
           const isCurrent = ph.id === firstIncompleteId;
-          const isCollapsed = !!collapsed[ph.id];
+          const isCollapsed = collapsedState.isCollapsed(phaseKey(ph.id));
           const classes = ['phase', isDone && 'done', isCurrent && 'current', isCollapsed && 'collapsed']
             .filter(Boolean)
             .join(' ');
