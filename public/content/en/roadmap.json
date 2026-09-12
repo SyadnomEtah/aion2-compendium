@@ -1,0 +1,346 @@
+{
+  "id": "roadmap",
+  "title": "Progression roadmap",
+  "single": false,
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<div class=\"intro\"><h2>Progression roadmap</h2><p class=\"lead\">Tick milestones off as you hit them, your progress is saved in this browser, and you can export a backup from the toolbar at any time.</p></div>"
+    },
+    {
+      "type": "phase",
+      "id": "roadmap-p0",
+      "num": "0",
+      "title": "Before launch",
+      "goalHtml": "Lock in the decisions that are hard or impossible to undo later. Pre-launch, now through October 4, 2026.",
+      "milestones": [
+        {
+          "key": "r-p0-01",
+          "labelHtml": " Create your account and install the client via Steam or PURPLE <a class=\"src cite\" href=\"https://www.exitlag.com/blog/aion-2-platforms-pc-mobile/\" target=\"_blank\" rel=\"noopener\" data-n=\"1\" title=\"exitlag.com (opens in new tab)\"><span class=\"cite-full\">exitlag.com</span><span class=\"cite-n\">1</span></a> <a class=\"src cite\" href=\"https://www.lagofast.com/en/blog/aion-2-platforms/\" target=\"_blank\" rel=\"noopener\" data-n=\"2\" title=\"lagofast.com (opens in new tab)\"><span class=\"cite-full\">lagofast.com</span><span class=\"cite-n\">2</span></a>",
+          "whyHtml": "AION 2 is PC-only at global launch, playable through Steam or NCsoft's PURPLE launcher. No console or mobile version exists for the West yet."
+        },
+        {
+          "key": "r-p0-02",
+          "labelHtml": " Pick faction and server together with any friends before you log in <a class=\"src cite\" href=\"https://guildorder.com/games/aion2/guides/faction-and-server-choice\" target=\"_blank\" rel=\"noopener\" data-n=\"3\" title=\"guildorder.com (opens in new tab)\"><span class=\"cite-full\">guildorder.com</span><span class=\"cite-n\">3</span></a>",
+          "whyHtml": "Faction and server choice is effectively permanent, and Legions (guilds) are faction-locked, so this decides who you can play with."
+        },
+        {
+          "key": "r-p0-03",
+          "labelHtml": " Pick your class, tank, melee or ranged DPS, magic DPS, healer, or support <a class=\"src cite\" href=\"https://www.mmoexp.com/News/aion-2-global-release-guide-launch-date-8-classes-84-run-alt-penalty-day-one-leveling.html\" target=\"_blank\" rel=\"noopener\" data-n=\"4\" title=\"mmoexp.com (opens in new tab)\"><span class=\"cite-full\">mmoexp.com</span><span class=\"cite-n\">4</span></a> <span class=\"badge marketing\">marketing</span>",
+          "whyHtml": "Eight classes exist: Templar (tank), Gladiator and Assassin (melee DPS), Ranger (ranged DPS), Sorcerer and Spiritmaster (magic DPS), Cleric (healer), and Chanter (hybrid support)."
+        },
+        {
+          "key": "r-p0-04",
+          "labelHtml": " Play the free Launch Scale Test, September 17 to 18, 2026 <a class=\"src cite\" href=\"https://aion2hub.com/guides/aion-2-release-date\" target=\"_blank\" rel=\"noopener\" data-n=\"5\" title=\"aion2hub, 2026-09 (opens in new tab)\"><span class=\"cite-full\">aion2hub, 2026-09</span><span class=\"cite-n\">5</span></a>",
+          "whyHtml": "This is open to anyone via Steam sign-up and is your first real chance to test performance and settings before launch."
+        },
+        {
+          "key": "r-p0-05",
+          "labelHtml": " Decide, buy or skip the Founder's Pack <a class=\"src cite\" href=\"https://timesaver.gg/blog/aion-2-founders-pack-worth-it\" target=\"_blank\" rel=\"noopener\" data-n=\"6\" title=\"timesaver.gg (opens in new tab)\"><span class=\"cite-full\">timesaver.gg</span><span class=\"cite-n\">6</span></a> <span class=\"badge conf-single\">single source</span>",
+          "whyHtml": "Standard ($24.99) bundles 5 days of Advance Access plus 30 days of Membership, the same account-affecting items as Deluxe and Ultimate, which only add cosmetics."
+        },
+        {
+          "key": "r-p0-06",
+          "labelHtml": " If buying, preload around Sept 28 and log in during Advance Access, Sept 30 to Oct 4 <a class=\"src cite\" href=\"https://aion2hub.com/guides/aion-2-release-date\" target=\"_blank\" rel=\"noopener\" data-n=\"7\" title=\"aion2hub, 2026-09 (opens in new tab)\"><span class=\"cite-full\">aion2hub, 2026-09</span><span class=\"cite-n\">7</span></a>",
+          "whyHtml": "Advance Access is a 5-day head start before the public October 5 global launch."
+        },
+        {
+          "key": "r-p0-07",
+          "labelHtml": " Confirm your PC meets minimum spec, Ryzen 5 2600 or i5-10500, GTX 1050 Ti <a class=\"src cite\" href=\"https://noping.com/blog/aion-2-system-requirements\" target=\"_blank\" rel=\"noopener\" data-n=\"8\" title=\"noping.com (opens in new tab)\"><span class=\"cite-full\">noping.com</span><span class=\"cite-n\">8</span></a> <span class=\"badge conf-single\">single source</span>",
+          "whyHtml": "Recommended is Ryzen 7 3700X or i7-11700, 16GB RAM, RTX 2070, worth checking against your rig now rather than on launch day."
+        },
+        {
+          "key": "r-p0-08",
+          "labelHtml": " Decide whether the $15 a month Membership fits your plans <a class=\"src cite\" href=\"https://massivelyop.com/2026/07/08/aion-2-releases-monetization-plan-with-optional-15-sub-battle-pass-cash-shop-and-founder-packs/\" target=\"_blank\" rel=\"noopener\" data-n=\"9\" title=\"massivelyop, 2026-07 (opens in new tab)\"><span class=\"cite-full\">massivelyop, 2026-07</span><span class=\"cite-n\">9</span></a> <a class=\"src cite\" href=\"https://www.mmorpg.com/editorials/aion-2s-monetization-reveal-is-free-to-play-with-an-asterisk-the-size-of-a-subscription-fee-2000138554\" target=\"_blank\" rel=\"noopener\" data-n=\"10\" title=\"mmorpg.com, 2026-07 (opens in new tab)\"><span class=\"cite-full\">mmorpg.com, 2026-07</span><span class=\"cite-n\">10</span></a>",
+          "whyHtml": "Membership is optional to play at all, but it gates trading on the Market and the Kinah to Quna currency exchange."
+        },
+        {
+          "key": "r-p0-09",
+          "labelHtml": " Save your keybind and settings changes before your first real fight <a class=\"src cite\" href=\"https://www.mmoexp.com/News/aion-2-settings-guide-best-graphics-and-gameplay-settings-for-higher-fps-and-smoother-performance.html\" target=\"_blank\" rel=\"noopener\" data-n=\"11\" title=\"mmoexp.com (opens in new tab)\"><span class=\"cite-full\">mmoexp.com</span><span class=\"cite-n\">11</span></a> <span class=\"badge marketing\">marketing</span>",
+          "whyHtml": "Moving Defiance off Spacebar, binding Sprint to Shift, and enabling combat overlays are a starting point to tweak in the Launch Scale Test, not gospel."
+        }
+      ],
+      "extraHtml": "\n    \n    <div class=\"tip\"><strong>Done when:</strong> your faction, server, class, and Founder's Pack decisions are made, and you have logged in at least once during the Launch Scale Test or Advance Access.</div>\n  "
+    },
+    {
+      "type": "phase",
+      "id": "roadmap-p1",
+      "num": "1",
+      "title": "First hours",
+      "goalHtml": "Get moving without wasting anything you cannot get back. Level 1 to about 12, your first few hours.",
+      "milestones": [
+        {
+          "key": "r-p1-01",
+          "labelHtml": " Clear your first Sealed Dungeon in your starter region <a class=\"src cite\" href=\"https://www.u4n.com/news/aion-2-dungeons-guide-types-group-solo-limit-rewards-tickets.html\" target=\"_blank\" rel=\"noopener\" data-n=\"1\" title=\"u4n.com (opens in new tab)\"><span class=\"cite-full\">u4n.com</span><span class=\"cite-n\">1</span></a> <a class=\"src cite\" href=\"https://overgear.com/guides/aion-2/all-you-need-to-know/\" target=\"_blank\" rel=\"noopener\" data-n=\"2\" title=\"overgear.com (opens in new tab)\"><span class=\"cite-full\">overgear.com</span><span class=\"cite-n\">2</span></a>",
+          "whyHtml": "Sealed Dungeons in Verteron and Altgard are solo, ungated by gear score, and pay out Daevanion Points from your very first hours."
+        },
+        {
+          "key": "r-p1-02",
+          "labelHtml": " Level your main damage skill to skill-level 8 <a class=\"src cite\" href=\"https://aion2.wiki.fextralife.com/Beginner's_Guide\" target=\"_blank\" rel=\"noopener\" data-n=\"3\" title=\"fextralife wiki (opens in new tab)\"><span class=\"cite-full\">fextralife wiki</span><span class=\"cite-n\">3</span></a> <a class=\"src cite\" href=\"https://www.oslink.io/blog/guide/aion-2-leveling-guide.html\" target=\"_blank\" rel=\"noopener\" data-n=\"4\" title=\"oslink.io (opens in new tab)\"><span class=\"cite-full\">oslink.io</span><span class=\"cite-n\">4</span></a>",
+          "whyHtml": "Skills gain bonus chosen effects at level 8, 12, and 16, so a skill lagging behind these breakpoints will feel weak."
+        },
+        {
+          "key": "r-p1-03",
+          "labelHtml": " Unlock your wings, reported around level 10 <a class=\"src cite\" href=\"https://www.thegamer.com/aion-2-wings-customization-flight-focused-mmorpg/\" target=\"_blank\" rel=\"noopener\" data-n=\"5\" title=\"thegamer.com (opens in new tab)\"><span class=\"cite-full\">thegamer.com</span><span class=\"cite-n\">5</span></a> <span class=\"badge conf-single\">single source</span>",
+          "whyHtml": "Flight is a core combat and traversal mechanic, not just cosmetic transport, and some Abyss boss mechanics reportedly require it."
+        },
+        {
+          "key": "r-p1-04",
+          "labelHtml": " Test a Mastery Skill respec at least once <a class=\"src cite\" href=\"https://aion2.wiki.fextralife.com/Beginner's_Guide\" target=\"_blank\" rel=\"noopener\" data-n=\"6\" title=\"fextralife wiki (opens in new tab)\"><span class=\"cite-full\">fextralife wiki</span><span class=\"cite-n\">6</span></a> <span class=\"badge conf-single\">single source</span>",
+          "whyHtml": "Skill Points refund for a small Kinah fee, so trying a different core skill early carries little risk."
+        },
+        {
+          "key": "r-p1-05",
+          "labelHtml": " Hold at least one Shugo Fiesta key unspent <a class=\"src cite\" href=\"https://boostroom.com/blog/aion-2-new-player-mistakes-20-progression-traps-to-avoid\" target=\"_blank\" rel=\"noopener\" data-n=\"7\" title=\"boostroom, 2026-02 (opens in new tab)\"><span class=\"cite-full\">boostroom, 2026-02</span><span class=\"cite-n\">7</span></a> <span class=\"badge conf-single\">single source</span>",
+          "whyHtml": "Spending limited daily keys before reaching max level reduces their endgame reward value."
+        },
+        {
+          "key": "r-p1-06",
+          "labelHtml": " Reach level 12 <a class=\"src cite\" href=\"https://aion2hub.com/leveling/elyos-levels-10-25\" target=\"_blank\" rel=\"noopener\" data-n=\"8\" title=\"aion2hub.com (opens in new tab)\"><span class=\"cite-full\">aion2hub.com</span><span class=\"cite-n\">8</span></a> <a class=\"src cite\" href=\"https://aion2.wiki.fextralife.com/Daevanion_Boards\" target=\"_blank\" rel=\"noopener\" data-n=\"9\" title=\"fextralife wiki (opens in new tab)\"><span class=\"cite-full\">fextralife wiki</span><span class=\"cite-n\">9</span></a>",
+          "whyHtml": "This is when your first Daevanion board, Nezekan, becomes available, a good marker that you are through the opening hours."
+        }
+      ],
+      "extraHtml": "\n    \n    <div class=\"tip\"><strong>Done when:</strong> you have cleared a Sealed Dungeon, unlocked your wings, leveled a core skill past 8, and reached level 12.</div>\n  "
+    },
+    {
+      "type": "phase",
+      "id": "roadmap-p2",
+      "num": "2",
+      "title": "First talent board and first groups",
+      "goalHtml": "Open the Daevanion board and start playing with other people. Level 12 to 23.",
+      "milestones": [
+        {
+          "key": "r-p2-01",
+          "labelHtml": " Open your first Daevanion board, Nezekan, at level 12 <a class=\"src cite\" href=\"https://aion2hub.com/leveling/elyos-levels-10-25\" target=\"_blank\" rel=\"noopener\" data-n=\"1\" title=\"aion2hub.com (opens in new tab)\"><span class=\"cite-full\">aion2hub.com</span><span class=\"cite-n\">1</span></a> <a class=\"src cite\" href=\"https://aion2.wiki.fextralife.com/Daevanion_Boards\" target=\"_blank\" rel=\"noopener\" data-n=\"2\" title=\"fextralife wiki (opens in new tab)\"><span class=\"cite-full\">fextralife wiki</span><span class=\"cite-n\">2</span></a>",
+          "whyHtml": "This is a permanent, separate-from-gear power source that guides call easy to overlook while rushing the story."
+        },
+        {
+          "key": "r-p2-02",
+          "labelHtml": " Spend Nezekan points toward one Special Skill Node target <a class=\"src cite\" href=\"https://aion2.wiki.fextralife.com/Daevanion_Boards\" target=\"_blank\" rel=\"noopener\" data-n=\"3\" title=\"fextralife wiki (opens in new tab)\"><span class=\"cite-full\">fextralife wiki</span><span class=\"cite-n\">3</span></a>",
+          "whyHtml": "Node costs run grey 1, green 2, blue 3, orange 4 points. Tracing the cheapest path to nodes that support one loadout beats grabbing every nearby node for raw power."
+        },
+        {
+          "key": "r-p2-03",
+          "labelHtml": " Reach level 20 for your second board, Zikel <a class=\"src cite\" href=\"https://v.daum.net/v/20251120041950129\" target=\"_blank\" rel=\"noopener\" data-n=\"4\" title=\"daum, 2025-11-20 (opens in new tab)\"><span class=\"cite-full\">daum, 2025-11-20</span><span class=\"cite-n\">4</span></a> <span class=\"badge kr-era\">kr-era</span> <span class=\"badge conf-single\">single source</span>",
+          "whyHtml": "This board is themed around damage amp and resist. The board level ladder is confirmed generally, but the exact stat theme is a single KR-era source and could shift for global."
+        },
+        {
+          "key": "r-p2-04",
+          "labelHtml": " Push your core skills past the level 12 specialization breakpoint <a class=\"src cite\" href=\"https://aion2.wiki.fextralife.com/Beginner's_Guide\" target=\"_blank\" rel=\"noopener\" data-n=\"5\" title=\"fextralife wiki (opens in new tab)\"><span class=\"cite-full\">fextralife wiki</span><span class=\"cite-n\">5</span></a> <a class=\"src cite\" href=\"https://www.oslink.io/blog/guide/aion-2-leveling-guide.html\" target=\"_blank\" rel=\"noopener\" data-n=\"6\" title=\"oslink.io (opens in new tab)\"><span class=\"cite-full\">oslink.io</span><span class=\"cite-n\">6</span></a>",
+          "whyHtml": "Skills gain bonus chosen effects at level 8, 12, and 16, so a skill lagging behind these thresholds will feel clunky in group content."
+        },
+        {
+          "key": "r-p2-05",
+          "labelHtml": " Clear Fire Temple once, around level 20 <a class=\"src cite\" href=\"https://www.aion2kina.com/en/guides/aion-2-dungeon-guide/\" target=\"_blank\" rel=\"noopener\" data-n=\"7\" title=\"aion2kina.com (opens in new tab)\"><span class=\"cite-full\">aion2kina.com</span><span class=\"cite-n\">7</span></a> <span class=\"badge conf-single\">single source</span>",
+          "whyHtml": "It has a high drop rate for unique items and Kinah, and works in Explore Mode for alt characters too."
+        },
+        {
+          "key": "r-p2-06",
+          "labelHtml": " Join an active Legion <a class=\"src cite\" href=\"https://mein-mmo.de/en/aion-2-11-mistakes-you-must-definitely-avoid-at-launch,1586538/\" target=\"_blank\" rel=\"noopener\" data-n=\"8\" title=\"mein-mmo, 2026-09 (opens in new tab)\"><span class=\"cite-full\">mein-mmo, 2026-09</span><span class=\"cite-n\">8</span></a> <span class=\"badge conf-single\">single source</span>",
+          "whyHtml": "Solo players lose time to slow party-finding, bad pickup groups, and missed weekly group clears."
+        }
+      ],
+      "extraHtml": "\n    \n    <div class=\"tip\"><strong>Done when:</strong> your Nezekan and Zikel boards are open, your core skills are past the level 12 breakpoint, and you are in a Legion.</div>\n  "
+    },
+    {
+      "type": "phase",
+      "id": "roadmap-p3",
+      "num": "3",
+      "title": "Stigmas, energy, and your first real build",
+      "goalHtml": "Commit to one PvE setup and start touching endgame-adjacent systems. Level 23 to about 40.",
+      "milestones": [
+        {
+          "key": "r-p3-01",
+          "labelHtml": " Unlock your first Stigma slot at level 23 <a class=\"src cite\" href=\"https://aion2hub.com/leveling/elyos-levels-10-25\" target=\"_blank\" rel=\"noopener\" data-n=\"1\" title=\"aion2hub.com (opens in new tab)\"><span class=\"cite-full\">aion2hub.com</span><span class=\"cite-n\">1</span></a> <a class=\"src cite\" href=\"https://boostroom.com/blog/aion-2-stigma-system-explained-builds-that-scale-into-endgame\" target=\"_blank\" rel=\"noopener\" data-n=\"2\" title=\"boostroom.com (opens in new tab)\"><span class=\"cite-full\">boostroom.com</span><span class=\"cite-n\">2</span></a>",
+          "whyHtml": "Stigmas are equippable skill-enhancement stones that add build-defining abilities on top of your class kit. They run on Stigma Shards, a separate currency from normal Skill Points."
+        },
+        {
+          "key": "r-p3-02",
+          "labelHtml": " Equip 4 Stigmas in one coherent PvE set <a class=\"src cite\" href=\"https://aion2hub.com/leveling/elyos-levels-10-25\" target=\"_blank\" rel=\"noopener\" data-n=\"3\" title=\"aion2hub.com (opens in new tab)\"><span class=\"cite-full\">aion2hub.com</span><span class=\"cite-n\">3</span></a> <span class=\"badge conf-single\">single source</span>",
+          "whyHtml": "Building a PvP set before your PvE rotation is stable wastes scarce Shards. A separate KR-era source describes a longer 23/30/40/45/50/55 slot ladder, so treat the total slot count as provisional until you see it in the client."
+        },
+        {
+          "key": "r-p3-03",
+          "labelHtml": " Reach level 30 for your third board, Vaizel <a class=\"src cite\" href=\"https://v.daum.net/v/20251120041950129\" target=\"_blank\" rel=\"noopener\" data-n=\"4\" title=\"daum, 2025-11-20 (opens in new tab)\"><span class=\"cite-full\">daum, 2025-11-20</span><span class=\"cite-n\">4</span></a> <span class=\"badge kr-era\">kr-era</span> <span class=\"badge conf-single\">single source</span>",
+          "whyHtml": "This board is themed around crit damage amp and resist, same board ladder as Nezekan and Zikel, with the stat theme sourced from a single KR-era article."
+        },
+        {
+          "key": "r-p3-04",
+          "labelHtml": " Clear Abyss Depths once, around level 30 <a class=\"src cite\" href=\"https://www.aion2kina.com/en/guides/aion-2-dungeon-guide/\" target=\"_blank\" rel=\"noopener\" data-n=\"5\" title=\"aion2kina.com (opens in new tab)\"><span class=\"cite-full\">aion2kina.com</span><span class=\"cite-n\">5</span></a> <span class=\"badge conf-single\">single source</span>",
+          "whyHtml": "This party dungeon teaches aerial combat and group mechanics and drops pre-endgame gear ahead of the level cap."
+        },
+        {
+          "key": "r-p3-05",
+          "labelHtml": " Clear Draconian Bastion once, around level 40 <a class=\"src cite\" href=\"https://www.aion2kina.com/en/guides/aion-2-dungeon-guide/\" target=\"_blank\" rel=\"noopener\" data-n=\"6\" title=\"aion2kina.com (opens in new tab)\"><span class=\"cite-full\">aion2kina.com</span><span class=\"cite-n\">6</span></a> <span class=\"badge conf-single\">single source</span>",
+          "whyHtml": "A 5-player follow-up to Abyss Depths that drops more pre-endgame gear before you hit the level cap."
+        },
+        {
+          "key": "r-p3-06",
+          "labelHtml": " Fill every Arcana card slot with something usable <a class=\"src cite\" href=\"https://expcarry.com/aion-2-arcana-transcendence-cards-tiers-crafting\" target=\"_blank\" rel=\"noopener\" data-n=\"7\" title=\"expcarry.com (opens in new tab)\"><span class=\"cite-full\">expcarry.com</span><span class=\"cite-n\">7</span></a>",
+          "whyHtml": "Arcana cards add item level, combat stats, set effects, and skill levels all at once, so an empty slot is wasted potential."
+        },
+        {
+          "key": "r-p3-07",
+          "labelHtml": " Enhance your weapon ahead of your armor and accessories <a class=\"src cite\" href=\"https://boostroom.com/blog/aion-2-enchanting-guide-upgrade-order-and-safe-breakpoints\" target=\"_blank\" rel=\"noopener\" data-n=\"8\" title=\"boostroom.com (opens in new tab)\"><span class=\"cite-full\">boostroom.com</span><span class=\"cite-n\">8</span></a> <a class=\"src cite\" href=\"https://overgear.com/guides/aion-2/all-you-need-to-know/\" target=\"_blank\" rel=\"noopener\" data-n=\"9\" title=\"overgear.com (opens in new tab)\"><span class=\"cite-full\">overgear.com</span><span class=\"cite-n\">9</span></a>",
+          "whyHtml": "Weapon enhancement gives the single biggest felt damage boost. Enhancement materials are scarce once early one-time quests are used up, so save them for gear you will keep."
+        },
+        {
+          "key": "r-p3-08",
+          "labelHtml": " Have an officer rent your Legion's hideout, 1,000,000 Kinah <a class=\"src cite\" href=\"https://guildmanager.app/blog/aion-2-legion-ranks-and-permissions\" target=\"_blank\" rel=\"noopener\" data-n=\"10\" title=\"guildmanager.app (opens in new tab)\"><span class=\"cite-full\">guildmanager.app</span><span class=\"cite-n\">10</span></a> <span class=\"badge conf-contested\">contested</span>",
+          "whyHtml": "Only an officer can rent the hideout, for about 24 days at a time. Independent sources dispute that Legions have levels, a Legion Hall, warehouses, or buffs at all, so treat any \"Legion level 5\" claim as unconfirmed."
+        },
+        {
+          "key": "r-p3-09",
+          "labelHtml": " Fill at least one Pantheon Colossus slot <a class=\"src cite\" href=\"https://vortexgaming.io/en/postdetail/629451\" target=\"_blank\" rel=\"noopener\" data-n=\"11\" title=\"vortexgaming.io (opens in new tab)\"><span class=\"cite-full\">vortexgaming.io</span><span class=\"cite-n\">11</span></a> <span class=\"badge conf-single\">single source</span>",
+          "whyHtml": "Pantheon is an easy-to-overlook permanent passive-stat system built from Statues and Colossi, separate from your Daevanion board."
+        }
+      ],
+      "extraHtml": "\n    \n    <div class=\"tip\"><strong>Done when:</strong> you have a full 4-Stigma PvE set, have cleared Abyss Depths and Draconian Bastion once each, and your weapon leads the rest of your gear in enhancement.</div>\n  "
+    },
+    {
+      "type": "phase",
+      "id": "roadmap-p4",
+      "num": "4",
+      "title": "Reaching cap",
+      "goalHtml": "Close out the remaining boards and advanced Stigmas before settling in. About level 40 to 45.",
+      "milestones": [
+        {
+          "key": "r-p4-01",
+          "labelHtml": " Reach level 40 for your fourth board, Triniel <a class=\"src cite\" href=\"https://v.daum.net/v/20251120041950129\" target=\"_blank\" rel=\"noopener\" data-n=\"1\" title=\"daum, 2025-11-20 (opens in new tab)\"><span class=\"cite-full\">daum, 2025-11-20</span><span class=\"cite-n\">1</span></a> <span class=\"badge kr-era\">kr-era</span> <span class=\"badge conf-single\">single source</span>",
+          "whyHtml": "Same board unlock pattern continuing from Nezekan, Zikel, and Vaizel, themed around multi-hit accuracy and resist."
+        },
+        {
+          "key": "r-p4-02",
+          "labelHtml": " Reach level 45, the KR-era level cap <a class=\"src cite\" href=\"https://www.mmoexp.com/News/aion-2-global-changes-revealed-no-heroic-gear-higher-ilevel-gates-level-cap-20-more.html\" target=\"_blank\" rel=\"noopener\" data-n=\"2\" title=\"mmoexp.com (opens in new tab)\"><span class=\"cite-full\">mmoexp.com</span><span class=\"cite-n\">2</span></a> <span class=\"badge marketing\">marketing</span> <span class=\"badge conf-contested\">contested</span>",
+          "whyHtml": "KR/TW later raised this to 50, and global may launch with a separate \"Level 20\" skill and Stigma enhancement cap instead. NC has not clarified which numbers apply globally."
+        },
+        {
+          "key": "r-p4-03",
+          "labelHtml": " At level 45, open your Ariel and Azphel Daevanion boards <a class=\"src cite\" href=\"https://aion2.wiki.fextralife.com/Daevanion_Boards\" target=\"_blank\" rel=\"noopener\" data-n=\"3\" title=\"fextralife wiki (opens in new tab)\"><span class=\"cite-full\">fextralife wiki</span><span class=\"cite-n\">3</span></a>",
+          "whyHtml": "This closes out the confirmed 6-board Daevanion ladder. A single unverified source names two more boards, Marchutan and Yustiel, at the same level, so re-check this after launch."
+        },
+        {
+          "key": "r-p4-04",
+          "labelHtml": " Complete the level 45 stigma quest for 2 Greater Stigma slots <a class=\"src cite\" href=\"https://differ.blog/p/aion-2-level-45-unlocking-advanced-stigma-skills-efficiently-2bcfb2\" target=\"_blank\" rel=\"noopener\" data-n=\"4\" title=\"differ.blog (opens in new tab)\"><span class=\"cite-full\">differ.blog</span><span class=\"cite-n\">4</span></a>",
+          "whyHtml": "Elyos run \"The Shattered Stigma\" and Asmodians run \"The Shulak's Stigma\" to unlock these slots."
+        },
+        {
+          "key": "r-p4-05",
+          "labelHtml": " Reach item level 1,000 before attempting the Ascension Trial <a class=\"src cite\" href=\"https://mein-mmo.de/en/aion-2-11-mistakes-you-must-definitely-avoid-at-launch,1586538/\" target=\"_blank\" rel=\"noopener\" data-n=\"5\" title=\"mein-mmo, 2026-09 (opens in new tab)\"><span class=\"cite-full\">mein-mmo, 2026-09</span><span class=\"cite-n\">5</span></a> <span class=\"badge kr-era\">kr-era</span> <span class=\"badge conf-single\">single source</span>",
+          "whyHtml": "Item level gates entry, but combat power, which also counts Daevanion, Pantheon, Arcana, and skill levels, decides whether you can actually clear the fight. Do not confuse the two."
+        },
+        {
+          "key": "r-p4-06",
+          "labelHtml": " Clear your first Transcendence or Conquest dungeon <a class=\"src cite\" href=\"https://expcarry.com/aion-2-arcana-transcendence-cards-tiers-crafting\" target=\"_blank\" rel=\"noopener\" data-n=\"6\" title=\"expcarry.com (opens in new tab)\"><span class=\"cite-full\">expcarry.com</span><span class=\"cite-n\">6</span></a> <a class=\"src cite\" href=\"https://www.u4n.com/news/how-to-increase-combat-power-in-aion-2.html\" target=\"_blank\" rel=\"noopener\" data-n=\"7\" title=\"u4n.com (opens in new tab)\"><span class=\"cite-full\">u4n.com</span><span class=\"cite-n\">7</span></a> <span class=\"badge kr-era\">kr-era</span>",
+          "whyHtml": "These are the endgame source of Arcana cards and high-value drops once your gear can handle them."
+        }
+      ],
+      "extraHtml": "\n    \n    <div class=\"tip\"><strong>Done when:</strong> all confirmed level-45 boards are open, you have your Greater Stigma slots, and you have cleared a Transcendence or Conquest dungeon.</div>\n  "
+    },
+    {
+      "type": "phase",
+      "id": "roadmap-p5",
+      "num": "5",
+      "title": "First weeks at cap",
+      "goalHtml": "Turn raw cap power into a repeatable weekly routine without wasting resources.",
+      "milestones": [
+        {
+          "key": "r-p5-01",
+          "labelHtml": " Open an Odyle Energy reward cube on a Transcendence or Conquest run <a class=\"src cite\" href=\"https://www.u4n.com/news/aion-2-dungeon-energy-how-to-manage-odell-energy-for-maximum-rewards.html\" target=\"_blank\" rel=\"noopener\" data-n=\"1\" title=\"u4n.com (opens in new tab)\"><span class=\"cite-full\">u4n.com</span><span class=\"cite-n\">1</span></a> <a class=\"src cite\" href=\"https://www.aion2kina.com/en/guides/aion-2-endgame-progression-roadmap/\" target=\"_blank\" rel=\"noopener\" data-n=\"2\" title=\"aion2kina.com (opens in new tab)\"><span class=\"cite-full\">aion2kina.com</span><span class=\"cite-n\">2</span></a> <span class=\"badge kr-era\">kr-era</span>",
+          "whyHtml": "These give the best reward for the 40-energy reward cube cost of any content type."
+        },
+        {
+          "key": "r-p5-02",
+          "labelHtml": " Keep Odyle Energy below its reported 560 cap <a class=\"src cite\" href=\"https://thegameswiki.com/aion-2/wiki/dungeons\" target=\"_blank\" rel=\"noopener\" data-n=\"3\" title=\"thegameswiki.com (opens in new tab)\"><span class=\"cite-full\">thegameswiki.com</span><span class=\"cite-n\">3</span></a> <a class=\"src cite\" href=\"https://www.mmoexp.com/News/the-5-critical-mistakes-to-avoid-in-aion-2.html\" target=\"_blank\" rel=\"noopener\" data-n=\"4\" title=\"mmoexp.com (opens in new tab)\"><span class=\"cite-full\">mmoexp.com</span><span class=\"cite-n\">4</span></a> <span class=\"badge kr-era\">kr-era</span>",
+          "whyHtml": "Passive regeneration stops once the pool is full, so sitting capped wastes potential income."
+        },
+        {
+          "key": "r-p5-03",
+          "labelHtml": " Clear all 7 of your weekly Daily Dungeon entries <a class=\"src cite\" href=\"https://www.u4n.com/news/aion-2-dungeons-guide-types-group-solo-limit-rewards-tickets.html\" target=\"_blank\" rel=\"noopener\" data-n=\"5\" title=\"u4n.com (opens in new tab)\"><span class=\"cite-full\">u4n.com</span><span class=\"cite-n\">5</span></a> <span class=\"badge conf-contested\">contested</span>",
+          "whyHtml": "One source cites 7 free entries a week, expandable via tickets, but exact weekly counts vary between sources, so verify in-client."
+        },
+        {
+          "key": "r-p5-04",
+          "labelHtml": " Equip a free stat title you already qualify for <a class=\"src cite\" href=\"https://aion2hub.com/database/titles\" target=\"_blank\" rel=\"noopener\" data-n=\"6\" title=\"aion2hub.com (opens in new tab)\"><span class=\"cite-full\">aion2hub.com</span><span class=\"cite-n\">6</span></a>",
+          "whyHtml": "Check the achievement panel periodically for cheap stat titles rather than actively farming them. Titles come from PvP rank, Arena tiers, boss kills, and more."
+        },
+        {
+          "key": "r-p5-05",
+          "labelHtml": " Reconfirm your Membership decision now that trading matters <a class=\"src cite\" href=\"https://massivelyop.com/2026/07/08/aion-2-releases-monetization-plan-with-optional-15-sub-battle-pass-cash-shop-and-founder-packs/\" target=\"_blank\" rel=\"noopener\" data-n=\"7\" title=\"massivelyop, 2026-07 (opens in new tab)\"><span class=\"cite-full\">massivelyop, 2026-07</span><span class=\"cite-n\">7</span></a> <span class=\"badge official\">official</span>",
+          "whyHtml": "The $15 a month Membership gates the player Market and the Kinah to Quna currency exchange."
+        },
+        {
+          "key": "r-p5-06",
+          "labelHtml": " Enhance your weapon to +8, the first safe damage breakpoint <a class=\"src cite\" href=\"https://boostroom.com/blog/aion-2-enchanting-guide-upgrade-order-and-safe-breakpoints\" target=\"_blank\" rel=\"noopener\" data-n=\"8\" title=\"boostroom.com (opens in new tab)\"><span class=\"cite-full\">boostroom.com</span><span class=\"cite-n\">8</span></a> <span class=\"badge conf-single\">single source</span>",
+          "whyHtml": "Pushing enhancement further on gear you might replace soon wastes scarce Enhance Stones. +8 is described as a damage-smoothing milestone, especially for weapons."
+        },
+        {
+          "key": "r-p5-07",
+          "labelHtml": " Decide whether to roll an alt now that clears feel fast <a class=\"src cite\" href=\"https://boostroom.com/blog/aion-2-new-player-mistakes-20-progression-traps-to-avoid\" target=\"_blank\" rel=\"noopener\" data-n=\"9\" title=\"boostroom, 2026-02 (opens in new tab)\"><span class=\"cite-full\">boostroom, 2026-02</span><span class=\"cite-n\">9</span></a> <a class=\"src cite\" href=\"https://mein-mmo.de/en/aion-2-11-mistakes-you-must-definitely-avoid-at-launch,1586538/\" target=\"_blank\" rel=\"noopener\" data-n=\"10\" title=\"mein-mmo, 2026-09 (opens in new tab)\"><span class=\"cite-full\">mein-mmo, 2026-09</span><span class=\"cite-n\">10</span></a>",
+          "whyHtml": "Per-character systems like Battle Pass, Stigma builds, and gear do not share progress across characters, and an 84-run account-wide weekly soft cap discourages heavy alt farming for Kinah."
+        }
+      ],
+      "extraHtml": "\n    \n    <div class=\"tip\"><strong>Done when:</strong> you have a repeatable weekly checklist you actually finish most weeks, and you have made a deliberate Membership and alt decision rather than drifting into one.</div>\n  "
+    },
+    {
+      "type": "phase",
+      "id": "roadmap-p6",
+      "num": "6",
+      "title": "Re-verify after global launch",
+      "goalHtml": "Check every KR-era assumption above against what actually ships on October 5, 2026.",
+      "milestones": [
+        {
+          "key": "r-p6-01",
+          "labelHtml": " Confirm the real level cap, KR/TW: 50, separate Level 20 skill cap reported <a class=\"src cite\" href=\"https://www.mmoexp.com/News/aion-2-global-changes-revealed-no-heroic-gear-higher-ilevel-gates-level-cap-20-more.html\" target=\"_blank\" rel=\"noopener\" data-n=\"1\" title=\"mmoexp.com (opens in new tab)\"><span class=\"cite-full\">mmoexp.com</span><span class=\"cite-n\">1</span></a> <span class=\"badge marketing\">marketing</span> <span class=\"badge conf-contested\">contested</span>",
+          "whyHtml": "NC has not clarified which cap number applies at global launch."
+        },
+        {
+          "key": "r-p6-02",
+          "labelHtml": " Confirm the Stigma unlock level and slot count in the client, KR: level 23, 4 slots <a class=\"src cite\" href=\"https://expcarry.com/aion-2-stigma-daevanion-skill-upgrades-resets-progression\" target=\"_blank\" rel=\"noopener\" data-n=\"2\" title=\"expcarry.com (opens in new tab)\"><span class=\"cite-full\">expcarry.com</span><span class=\"cite-n\">2</span></a> <span class=\"badge kr-era\">kr-era</span> <span class=\"badge conf-single\">single source</span>",
+          "whyHtml": "A separate KR-era source describes a longer 23/30/40/45/50/55 slot ladder, and a Stigma level cap raised from 20 to 25 past level 45. Neither is confirmed for global."
+        },
+        {
+          "key": "r-p6-03",
+          "labelHtml": " Confirm the Daevanion node reset cost, KR set it to 500 Kinah per node <a class=\"src cite\" href=\"https://expcarry.com/aion-2-stigma-daevanion-skill-upgrades-resets-progression\" target=\"_blank\" rel=\"noopener\" data-n=\"3\" title=\"expcarry.com (opens in new tab)\"><span class=\"cite-full\">expcarry.com</span><span class=\"cite-n\">3</span></a> <span class=\"badge kr-era\">kr-era</span> <span class=\"badge conf-single\">single source</span>",
+          "whyHtml": "The source itself flags that this figure could change for global."
+        },
+        {
+          "key": "r-p6-04",
+          "labelHtml": " Confirm whether the Marchutan and Yustiel Daevanion boards exist <a class=\"src cite\" href=\"https://aion2.wiki.fextralife.com/Daevanion_Boards\" target=\"_blank\" rel=\"noopener\" data-n=\"4\" title=\"fextralife wiki (opens in new tab)\"><span class=\"cite-full\">fextralife wiki</span><span class=\"cite-n\">4</span></a> <span class=\"badge conf-contested\">contested</span>",
+          "whyHtml": "The confirmed board ladder is Nezekan, Zikel, Vaizel, Triniel, Ariel, and Azphel. A single unverified source adds these two more at level 45."
+        },
+        {
+          "key": "r-p6-05",
+          "labelHtml": " Confirm Odyle Energy's real cap and regen rate, KR: 560 cap, contested <a class=\"src cite\" href=\"https://www.u4n.com/news/aion-2-dungeon-energy-how-to-manage-odell-energy-for-maximum-rewards.html\" target=\"_blank\" rel=\"noopener\" data-n=\"5\" title=\"u4n.com (opens in new tab)\"><span class=\"cite-full\">u4n.com</span><span class=\"cite-n\">5</span></a> <a class=\"src cite\" href=\"https://game.savetip.co.kr/aion2-od-energy-guide/\" target=\"_blank\" rel=\"noopener\" data-n=\"6\" title=\"savetip.co.kr (opens in new tab)\"><span class=\"cite-full\">savetip.co.kr</span><span class=\"cite-n\">6</span></a> <span class=\"badge conf-contested\">contested</span>",
+          "whyHtml": "Sources disagree between a 560 cap with 15-per-3-hours regen and a weekly-accumulation reading closer to 1,400 total."
+        },
+        {
+          "key": "r-p6-06",
+          "labelHtml": " Confirm your weekly dungeon entry limits in the client <a class=\"src cite\" href=\"https://www.u4n.com/news/aion-2-dungeons-guide-types-group-solo-limit-rewards-tickets.html\" target=\"_blank\" rel=\"noopener\" data-n=\"7\" title=\"u4n.com (opens in new tab)\"><span class=\"cite-full\">u4n.com</span><span class=\"cite-n\">7</span></a> <a class=\"src cite\" href=\"https://www.exitlag.com/blog/aion-2-dungeons-guide/\" target=\"_blank\" rel=\"noopener\" data-n=\"8\" title=\"exitlag.com (opens in new tab)\"><span class=\"cite-full\">exitlag.com</span><span class=\"cite-n\">8</span></a> <span class=\"badge conf-contested\">contested</span>",
+          "whyHtml": "Expedition counts range from 3 to 21 per week and Transcendence from 2 to 14 per week depending on the source."
+        },
+        {
+          "key": "r-p6-07",
+          "labelHtml": " Confirm whether Fortress Sieges or Legion levels exist at all <a class=\"src cite\" href=\"https://timesaver.gg/blog/aion-2-pvp\" target=\"_blank\" rel=\"noopener\" data-n=\"9\" title=\"timesaver.gg (opens in new tab)\"><span class=\"cite-full\">timesaver.gg</span><span class=\"cite-n\">9</span></a> <a class=\"src cite\" href=\"https://guildmanager.app/blog/aion-2-legion-ranks-and-permissions\" target=\"_blank\" rel=\"noopener\" data-n=\"10\" title=\"guildmanager.app (opens in new tab)\"><span class=\"cite-full\">guildmanager.app</span><span class=\"cite-n\">10</span></a> <span class=\"badge conf-contested\">contested</span>",
+          "whyHtml": "One source claims hundreds-of-players siege warfare is back, another says original-form sieges are unconfirmed. Separately, sources dispute whether Legions have levels, a Hall, or buffs at all."
+        },
+        {
+          "key": "r-p6-08",
+          "labelHtml": " Confirm daily and weekly reset times for your own region server <a class=\"src cite\" href=\"https://www.aion2kina.com/en/tools/daily-checklist/\" target=\"_blank\" rel=\"noopener\" data-n=\"11\" title=\"aion2kina.com (opens in new tab)\"><span class=\"cite-full\">aion2kina.com</span><span class=\"cite-n\">11</span></a> <span class=\"badge kr-era\">kr-era</span> <span class=\"badge conf-single\">single source</span>",
+          "whyHtml": "Every reset-time figure found in research comes from KR/TW servers, not a confirmed global time zone."
+        },
+        {
+          "key": "r-p6-09",
+          "labelHtml": " Confirm the 84-run alt penalty percentage before farming alts <a class=\"src cite\" href=\"https://www.mmoexp.com/News/aion-2-global-release-guide-launch-date-8-classes-84-run-alt-penalty-day-one-leveling.html\" target=\"_blank\" rel=\"noopener\" data-n=\"12\" title=\"mmoexp.com (opens in new tab)\"><span class=\"cite-full\">mmoexp.com</span><span class=\"cite-n\">12</span></a> <span class=\"badge marketing\">marketing</span> <span class=\"badge conf-single\">single source</span>",
+          "whyHtml": "The specific \"90% reduction\" figure comes from a single lower-trust source, though the existence of an 84-run soft cap is corroborated elsewhere."
+        },
+        {
+          "key": "r-p6-10",
+          "labelHtml": " Confirm Expedition party size before committing to a static group <a class=\"src cite\" href=\"https://overgear.com/guides/aion-2/all-you-need-to-know/\" target=\"_blank\" rel=\"noopener\" data-n=\"13\" title=\"overgear.com (opens in new tab)\"><span class=\"cite-full\">overgear.com</span><span class=\"cite-n\">13</span></a> <a class=\"src cite\" href=\"https://thegameswiki.com/aion-2/wiki/dungeons\" target=\"_blank\" rel=\"noopener\" data-n=\"14\" title=\"thegameswiki.com (opens in new tab)\"><span class=\"cite-full\">thegameswiki.com</span><span class=\"cite-n\">14</span></a> <span class=\"badge conf-contested\">contested</span>",
+          "whyHtml": "Steam materials reportedly say 5-player, older teasers said 4-player, and one wiki cites 8-player expeditions."
+        }
+      ],
+      "extraHtml": "\n    \n    <div class=\"tip\"><strong>Done when:</strong> you have checked each contested or KR-era item above against official patch notes or your own in-game UI after October 5, and updated your plan accordingly.</div>\n  "
+    }
+  ]
+}

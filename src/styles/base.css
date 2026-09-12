@@ -1,0 +1,28 @@
+/* Resets and base element typography. No component classes here. */
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.65 var(--font-sans)}
+body{transition:background var(--dur-slow) var(--ease),color var(--dur-slow) var(--ease)}
+
+a{color:var(--role-tank)}
+h1,h2,h3,h4{line-height:1.25;margin:.2em 0 .5em}
+h1{font-size:var(--text-lg);margin:0;letter-spacing:.02em}
+h2{font-size:var(--text-xl);color:var(--gold2)}
+h3{font-size:var(--text-lg);margin:0}
+h4{font-size:var(--text-base);color:var(--gold)}
+p{margin:.5em 0 .9em;max-width:78ch}
+ul,ol{margin:.4em 0 1em;padding-left:1.4em;max-width:80ch}
+li{margin:.35em 0}
+li>ul,li>ol{margin:.3em 0 .4em}
+code{background:var(--bg3);padding:.1em .35em;border-radius:4px;font-size:.92em}
+button{font:inherit}
+mark{background:color-mix(in srgb, var(--gold) 35%, transparent);color:inherit;border-radius:3px}
+.hidden{display:none!important}
+
+/* Focus rings: visible everywhere, on keyboard focus, at least 4.5:1 against surfaces. */
+:focus-visible{outline:2px solid var(--gold2);outline-offset:2px;border-radius:var(--radius-sm)}
+:focus:not(:focus-visible){outline:none}
+
+/* Wide content (tables, code) never forces the page to scroll horizontally. */
+.tbl{overflow-x:auto}

@@ -1,0 +1,136 @@
+/* App chrome: sidebar rail, top bar, search dialog, toast, scrim, footer. */
+
+/* Full-width shell: nav rail, content column (capped and centered on very wide screens), and,
+   only when the mounted page has published TOC data (see src/lib/tocActions.tsx) and the
+   viewport is 1280px or wider, a right "On this page" rail column. Rail width comes from the
+   sidebar/toc-rail's own CSS width, not from this grid, so the collapsed rail (.side.collapsed)
+   just works without a second set of column widths here.
+   Two explicit rows: row 1 is the top bar, spanning every column after the sidebar (so it never
+   stops short of the toc rail); row 2 holds the content column and, when present, the toc rail.
+   The sidebar spans both rows via grid-row on .side below. */
+.app{display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-rows:auto 1fr;min-height:100vh}
+@media (min-width:1280px){
+  .app.has-toc-rail{grid-template-columns:auto minmax(0,1fr) auto}
+}
+
+/* ---------- sidebar ---------- */
+.side{
+  width:var(--side-w);flex:0 0 var(--side-w);
+  background:linear-gradient(180deg,var(--bg3),var(--bg));
+  border-right:1px solid var(--line);
+  position:sticky;top:0;height:100vh;overflow-y:auto;overflow-x:hidden;scrollbar-width:thin;
+  display:flex;flex-direction:column;z-index:60;
+  transition:width var(--dur-slow) var(--ease);
+  grid-row:1/-1;
+}
+.side.collapsed{width:var(--side-w-collapsed);flex-basis:var(--side-w-collapsed)}
+.brand{display:flex;align-items:center;gap:12px;padding:18px 18px 12px;cursor:pointer;background:transparent;border:0;color:inherit;text-align:left;width:100%}
+.brand .wing{width:34px;height:34px;border-radius:50%;background:radial-gradient(circle at 30% 30%,var(--gold2),#7a5a14);box-shadow:0 0 18px color-mix(in srgb, var(--gold) 50%, transparent);flex:0 0 auto}
+.brand small{display:block;color:var(--muted);font-size:.72rem}
+.side.collapsed .brand div:last-child{display:none}
+.rail-toggle{margin:0 12px 6px;display:flex;align-items:center;justify-content:center;gap:8px;background:var(--bg3);border:1px solid var(--line);color:var(--muted);border-radius:var(--radius-sm);padding:7px;cursor:pointer}
+.rail-toggle:hover{color:var(--txt);border-color:var(--gold)}
+.rail-toggle svg{width:16px;height:16px}
+.side.collapsed .rail-toggle{margin:0 10px 6px}
+.sgroup{padding:10px 12px 4px}
+.sgroup>span{display:block;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:6px 8px;white-space:nowrap}
+.side.collapsed .sgroup>span{opacity:0;height:0;padding:0;overflow:hidden}
+.nav-btn{display:flex;align-items:center;gap:10px;width:100%;text-align:left;background:transparent;border:0;color:var(--txt);padding:9px 10px;border-radius:9px;cursor:pointer;font-size:.93rem;white-space:nowrap;overflow:hidden}
+.nav-btn svg{width:18px;height:18px;flex:0 0 18px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;color:var(--muted)}
+.nav-btn:hover{background:var(--bg3)}
+.nav-btn.active{background:linear-gradient(90deg,color-mix(in srgb, var(--gold) 18%, transparent),transparent);color:var(--gold2);box-shadow:inset 3px 0 0 var(--gold)}
+.nav-btn.active svg{color:var(--gold2)}
+.nav-btn .cnt{margin-left:auto;font-size:.7rem;color:var(--muted);background:var(--bg3);padding:1px 7px;border-radius:999px}
+.nav-btn.role-tank svg{color:var(--role-tank)}.nav-btn.role-dps svg{color:var(--role-dps)}.nav-btn.role-healer svg{color:var(--role-healer)}.nav-btn.role-support svg{color:var(--role-support)}
+.role-dot{width:7px;height:7px;border-radius:50%;flex:0 0 7px;background:var(--muted)}
+.nav-btn.role-tank .role-dot{background:var(--role-tank)}.nav-btn.role-dps .role-dot{background:var(--role-dps)}.nav-btn.role-healer .role-dot{background:var(--role-healer)}.nav-btn.role-support .role-dot{background:var(--role-support)}
+.side.collapsed .nav-btn{justify-content:center}
+.side.collapsed .nav-btn .label,.side.collapsed .nav-btn .cnt,.side.collapsed .nav-btn .role-dot{display:none}
+.side .foot{margin-top:auto;padding:14px 18px;color:var(--muted);font-size:.72rem;border-top:1px solid var(--line)}
+.side.collapsed .foot{padding:14px 10px;text-align:center}
+.side.collapsed .foot .foot-text{display:none}
+
+/* ---------- top bar ---------- */
+/* Content column: fills the grid track between the rail and the (optional) toc rail, but caps at
+   1440px and centers itself once the viewport is wide enough that rail + 1440 + toc would not
+   fill it. TopBar/main/footer all live inside, so they share this same capped, centered width. */
+.content{min-width:0;width:100%;max-width:1440px;margin:0 auto;display:flex;flex-direction:column;grid-column:2;grid-row:2}
+/* Spans every column after the sidebar (content, and the toc rail when it exists) so the header
+   and its bottom border always reach the same right edge as the toc rail, instead of stopping at
+   the (narrower, capped) content column. */
+.top{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:12px;padding:10px var(--gutter);background:color-mix(in srgb, var(--bg) 85%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);grid-column:2/-1;grid-row:1;min-height:var(--topbar-h);box-sizing:border-box}
+.burger{display:none;background:transparent;border:1px solid var(--line);color:var(--txt);border-radius:8px;padding:6px 9px;cursor:pointer;align-items:center}
+.crumb{color:var(--muted);font-size:.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:flex;align-items:center;gap:6px}
+.crumb b{color:var(--txt);font-weight:600}
+
+.search-trigger{display:flex;align-items:center;gap:10px;margin-left:auto;flex:0 1 420px;min-width:0;padding:9px 12px;border-radius:999px;border:1px solid var(--line);background:var(--bg2);color:var(--muted);cursor:pointer;font-size:.9rem;text-align:left}
+.search-trigger:hover{border-color:var(--gold)}
+.search-trigger svg{width:16px;height:16px;flex:0 0 16px}
+.search-trigger .label{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.search-trigger kbd{font:inherit;font-size:.72rem;background:var(--bg3);border:1px solid var(--line);border-radius:5px;padding:1px 6px;color:var(--muted)}
+
+.tools{display:flex;gap:6px;align-items:center}
+.tools button,.icon-btn{background:var(--bg2);border:1px solid var(--line);color:var(--muted);padding:6px 10px;border-radius:8px;cursor:pointer;font-size:.82rem;white-space:nowrap;display:inline-flex;align-items:center;gap:6px}
+.tools button:hover,.icon-btn:hover{color:var(--txt);border-color:var(--gold)}
+.icon-btn svg{width:16px;height:16px}
+.icon-btn.on{color:var(--gold2);border-color:var(--gold)}
+
+/* ---------- language picker ---------- */
+.lang-picker{position:relative}
+.lang-menu{position:absolute;top:calc(100% + 6px);right:0;min-width:140px;list-style:none;margin:0;padding:4px;background:var(--bg2);border:1px solid var(--line);border-radius:var(--radius-sm);box-shadow:var(--shadow);z-index:80}
+.lang-menu li{margin:0}
+.lang-menu button{display:block;width:100%;text-align:left;background:transparent;border:0;color:var(--txt);padding:7px 10px;border-radius:6px;cursor:pointer;font-size:.85rem}
+.lang-menu button:hover{background:var(--bg3)}
+.lang-menu button.on{color:var(--gold2);font-weight:600}
+
+/* ---------- search dialog (command palette) ---------- */
+.search-backdrop{position:fixed;inset:0;background:color-mix(in srgb, black 55%, transparent);z-index:200;display:flex;align-items:flex-start;justify-content:center;padding:11vh 16px 16px}
+.search-dialog{width:100%;max-width:640px;background:var(--bg2);border:1px solid var(--line);border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);overflow:hidden;display:flex;flex-direction:column;max-height:76vh}
+.search-dialog .sd-field{display:flex;align-items:center;gap:10px;padding:14px 16px;border-bottom:1px solid var(--line)}
+.search-dialog .sd-field svg{width:18px;height:18px;color:var(--muted);flex:0 0 18px}
+.search-dialog .sd-field input{flex:1;background:transparent;border:0;outline:0;color:var(--txt);font-size:1.05rem}
+.search-dialog .sd-field kbd{font-size:.72rem;background:var(--bg3);border:1px solid var(--line);border-radius:5px;padding:2px 6px;color:var(--muted)}
+.search-dialog .sd-results{overflow-y:auto;padding:6px}
+.search-dialog .sd-group{padding:8px 10px 2px;color:var(--muted);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase}
+.search-dialog .sd-hit{display:block;width:100%;text-align:left;background:transparent;border:0;border-radius:var(--radius-sm);color:var(--txt);padding:9px 10px;cursor:pointer}
+.search-dialog .sd-hit:hover,.search-dialog .sd-hit.sel{background:var(--bg3)}
+.search-dialog .sd-hit small{display:block;color:var(--muted);font-size:.78rem}
+.search-dialog .sd-hit em{color:var(--gold2);font-style:normal}
+.search-dialog .sd-none,.search-dialog .sd-hint{padding:22px 16px;color:var(--muted);text-align:center;font-size:.9rem}
+
+.scrim{display:none;position:fixed;inset:0;background:color-mix(in srgb, black 50%, transparent);z-index:55}
+
+/* ---------- toast ---------- */
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:var(--bg3);border:1px solid var(--gold);color:var(--txt);padding:10px 16px;border-radius:10px;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:opacity var(--dur-slow) var(--ease);z-index:100}
+.toast.show{opacity:1}
+
+/* ---------- backup banner ---------- */
+.bk-banner[hidden]{display:none}
+.bk-banner{display:flex;align-items:center;gap:14px;flex-wrap:wrap;background:color-mix(in srgb, var(--warning) 12%, transparent);border:1px solid var(--warning);border-radius:10px;padding:10px 14px;margin:0 0 18px;font-size:.92rem}
+.bk-banner .bk-actions{margin-left:auto;display:flex;gap:8px}
+.bk-banner .btn{padding:6px 12px;font-size:.85rem}
+
+footer{padding:20px var(--gutter);color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+
+@media (max-width:980px){
+  .app{display:block}
+  .side{position:fixed;left:0;top:0;transform:translateX(-100%);transition:transform var(--dur-slow) var(--ease);width:var(--side-w)!important;flex-basis:var(--side-w)!important}
+  .side.open{transform:none}
+  .side.collapsed .sgroup>span{opacity:1;height:auto;padding:6px 8px}
+  .side.collapsed .nav-btn{justify-content:flex-start}
+  .side.collapsed .nav-btn .label{display:inline}
+  .side.collapsed .nav-btn .cnt{display:inline-block}
+  .side.collapsed .nav-btn .role-dot{display:inline-block}
+  .side.collapsed .brand div:last-child{display:block}
+  .rail-toggle{display:none}
+  .scrim.open{display:block}
+  .burger{display:inline-flex}
+  main{padding:16px 14px 60px}
+  .top{padding:8px 12px;flex-wrap:wrap}
+  .crumb{flex:1 1 auto}
+  .search-trigger{flex-basis:100%;order:3}
+  .search-trigger kbd{display:none}
+  .tools{margin-left:auto}
+  /* Icon-only settings cluster: keeps 5 controls on one line down to 360px. */
+  .tools .label{display:none}
+}

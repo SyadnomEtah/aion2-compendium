@@ -1,0 +1,24 @@
+{
+  "cards": 165,
+  "sourceLinks": 2312,
+  "pageCounts": {
+    "start": 8,
+    "priorities": 6,
+    "systems": 28,
+    "dungeons": 10,
+    "money": 10,
+    "avoid": 5,
+    "classes": 2,
+    "class-templar": 11,
+    "class-gladiator": 11,
+    "class-assassin": 11,
+    "class-ranger": 11,
+    "class-sorcerer": 11,
+    "class-spiritmaster": 11,
+    "class-cleric": 11,
+    "class-chanter": 11,
+    "roadmap": 7,
+    "sources": 8
+  },
+  "compiled": "2026-09-12"
+}

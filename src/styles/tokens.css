@@ -1,0 +1,141 @@
+/* Design tokens: color, spacing, radii, shadows, type scale, motion.
+   Dark is the default brand look; [data-theme="light"] overrides the same variable names, and a
+   prefers-color-scheme:light media query does the same when the user has never chosen explicitly
+   (src/lib/theme.ts only ever sets the data-theme attribute, never removes tokens.css's defaults). */
+
+:root{
+  color-scheme: dark;
+
+  /* surfaces */
+  --bg:#0b0d13;
+  --bg2:#12151e;
+  --bg3:#1a1f2b;
+  --bg4:#222838;
+  --line:#2a3142;
+  --txt:#e8eaf1;
+  --muted:#98a1b3;
+
+  /* brand accent */
+  --gold:#d9b25a;
+  --gold2:#f0cf7a;
+
+  /* role accents (also used as general semantic colors) */
+  --role-tank:#5aa9e6;
+  --role-dps:#ef6b6b;
+  --role-healer:#5bd48a;
+  --role-support:#b48cf2;
+  --warning:#f2b94a;
+
+  /* older color-name aliases kept so existing selectors (blue/green/red/amber/purple) keep working */
+  --blue:var(--role-tank);
+  --green:var(--role-healer);
+  --red:var(--role-dps);
+  --amber:var(--warning);
+  --purple:var(--role-support);
+
+  /* spacing scale */
+  --space-1:4px;
+  --space-2:8px;
+  --space-3:12px;
+  --space-4:16px;
+  --space-5:20px;
+  --space-6:24px;
+  --space-7:32px;
+  --space-8:48px;
+
+  /* radii */
+  --radius-sm:6px;
+  --radius:12px;
+  --radius-lg:18px;
+  --radius-full:999px;
+
+  /* shadows */
+  --shadow-sm:0 2px 8px rgba(0,0,0,.35);
+  --shadow:0 8px 30px rgba(0,0,0,.45);
+  --shadow-lg:0 24px 64px rgba(0,0,0,.55);
+
+  /* type scale (system UI stack only, no webfont download) */
+  --font-sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --text-xs:.72rem;
+  --text-sm:.82rem;
+  --text-base:1rem;
+  --text-md:1.05rem;
+  --text-lg:1.2rem;
+  --text-xl:1.55rem;
+  --text-2xl:2rem;
+  --text-3xl:2.75rem;
+
+  /* motion */
+  --dur-fast:120ms;
+  --dur:160ms;
+  --dur-slow:200ms;
+  --ease:cubic-bezier(.4,0,.2,1);
+
+  /* shell */
+  --side-w:260px;
+  --side-w-collapsed:72px;
+  /* shared outer gutter (main, top bar, toc rail) and the top bar's rendered height, so the
+     sticky toc-rail can offset by exactly the same amount instead of guessing a pixel value. */
+  --gutter:clamp(24px,3vw,32px);
+  --topbar-h:64px;
+}
+
+/* Light theme: same variable names, new values. Applies when the user explicitly picked light,
+   or (via the media query below) when nothing was picked and the OS prefers light. */
+:root[data-theme="light"]{
+  color-scheme: light;
+  --bg:#f3f4f8;
+  --bg2:#ffffff;
+  --bg3:#eceef4;
+  --bg4:#e1e4ec;
+  --line:#d7dbe6;
+  --txt:#171b26;
+  --muted:#565f74;
+
+  --gold:#966e1d;
+  --gold2:#8a611a;
+
+  --role-tank:#1c6bab;
+  --role-dps:#c23f3f;
+  --role-healer:#1b8753;
+  --role-support:#7647bf;
+  --warning:#9c6a08;
+
+  --shadow-sm:0 2px 8px rgba(30,34,50,.08);
+  --shadow:0 10px 30px rgba(30,34,50,.12);
+  --shadow-lg:0 24px 60px rgba(30,34,50,.16);
+}
+
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]):not([data-theme="light"]){
+    color-scheme: light;
+    --bg:#f3f4f8;
+    --bg2:#ffffff;
+    --bg3:#eceef4;
+    --bg4:#e1e4ec;
+    --line:#d7dbe6;
+    --txt:#171b26;
+    --muted:#565f74;
+
+    --gold:#966e1d;
+    --gold2:#8a611a;
+
+    --role-tank:#1c6bab;
+    --role-dps:#c23f3f;
+    --role-healer:#1b8753;
+    --role-support:#7647bf;
+    --warning:#9c6a08;
+
+    --shadow-sm:0 2px 8px rgba(30,34,50,.08);
+    --shadow:0 10px 30px rgba(30,34,50,.12);
+    --shadow-lg:0 24px 60px rgba(30,34,50,.16);
+  }
+}
+
+@media (prefers-reduced-motion: reduce){
+  :root{
+    --dur-fast:0ms;
+    --dur:0ms;
+    --dur-slow:0ms;
+  }
+}
