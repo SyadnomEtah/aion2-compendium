@@ -21,7 +21,7 @@ Progress, tracker state and the language choice live in the browser's localStora
 - **Routing**: react-router with HashRouter
 - **Testing**: Vitest with jsdom
 - **Content pipeline**: Python 3.10+ (standard library only) to compile HTML fragments and i18n translations into JSON
-- **Deployment**: GitHub Actions to build and deploy `dist/` to GitHub Pages
+- **Deployment**: GitHub Actions (Node 24) to build and deploy `dist/` to GitHub Pages
 
 ## Repository layout
 
@@ -61,7 +61,7 @@ Generated files (`public/content/**`, `src/generated/**`) are committed to the r
 
 ## Getting started
 
-Install dependencies:
+Requires Node.js 22.12 or newer (24 LTS recommended, matching CI). Install dependencies:
 ```bash
 npm install
 ```
