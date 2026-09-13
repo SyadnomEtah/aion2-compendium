@@ -36,3 +36,11 @@ Store keys (in `src/lib/store.ts`), localStorage key prefixes (`aion2.*`), and b
 ## Structure
 
 For structural questions, see ARCHITECTURE.md, which is authoritative on pages, routing, content types, data flow and conventions.
+
+## Gotchas
+
+- Node 22.12 or newer is required (jsdom 27 fails on older 22.x with `ERR_REQUIRE_ESM`); CI builds on Node 24, keep local Node at 24 LTS for parity.
+- The Browser pane hides CSS animations when it is not in front: computed opacity stays at the animation start and screenshots look faded or blank. Verify layout with `getBoundingClientRect` and class checks, not screenshots, or bring the pane to front first.
+- Browser automation "Return" key presses did not trigger React `onKeyDown` Enter handlers; dispatching a synthetic `KeyboardEvent('keydown', { key: 'Enter' })` on the input did. Controlled inputs need the native value setter before dispatching `input` in JS-driven tests.
+- `aion2.collapsed` stores only ids the visitor changed; sources cards default closed, everything else open. Roadmap phase ids already carry the `roadmap-` prefix.
+- The first commit carries one failed "pages build and deployment" check: the built-in Jekyll build was queued before the Pages source was switched to GitHub Actions. It cannot recur while `build_type` is `workflow`.
